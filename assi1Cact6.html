@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: auto;
+        }
+        .form-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            width: 45%;
+        }
+        .form-box h2 {
+            margin-bottom: 20px;
+        }
+        .form-box label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-box input[type="text"],
+        .form-box input[type="email"],
+        .form-box input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-box input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-box button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-box button:hover {
+            background-color: #218838;
+        }
+        .link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <!-- Sign-Up Form -->
+        <div class="form-box">
+            <h2>Sign Up</h2>
+            <form action="login.html">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <label>
+                    <input type="checkbox" name="terms" required> I accept the Terms of Use & Privacy Policy
+                </label>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-box">
+            <h2>Login</h2>
+            <form action="signup.html">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="email" required>
+
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password" required>
+
+                <label>
+                    <input type="checkbox" name="remember"> Show Password
+                </label>
+
+                <button type="submit">Sign In</button>
+
+                <div class="link">
+                    <a href="#">Forgot Username/Password?</a><br>
+                    <a href="signup.html">Don't have an account? Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

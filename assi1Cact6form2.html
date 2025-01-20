@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-box {
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .form-box h2 {
+            margin-bottom: 20px;
+        }
+        .form-box label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-box input,
+        .form-box select,
+        .form-box textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-box textarea {
+            resize: none;
+        }
+        .form-box fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        .form-box legend {
+            font-weight: bold;
+        }
+        .form-box button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>HTML5 Elements Form</h2>
+        <form>
+            <label for="textbox">Text Box</label>
+            <input type="text" id="textbox" name="textbox" placeholder="Enter text here">
+
+            <fieldset>
+                <legend>Radio Buttons</legend>
+                <label><input type="radio" name="radio" value="option1"> Option 1</label>
+                <label><input type="radio" name="radio" value="option2"> Option 2</label>
+                <label><input type="radio" name="radio" value="option3"> Option 3</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Check Boxes</legend>
+                <label><input type="checkbox" name="checkbox1"> Option A</label>
+                <label><input type="checkbox" name="checkbox2"> Option B</label>
+                <label><input type="checkbox" name="checkbox3"> Option C</label>
+            </fieldset>
+
+            <label for="scroll-box">Selection Box (size 3)</label>
+            <select id="scroll-box" name="scroll-box" size="3">
+                <option value="item1">Item 1</option>
+                <option value="item2">Item 2</option>
+                <option value="item3">Item 3</option>
+                <option value="item4">Item 4</option>
+            </select>
+
+            <label for="option-box">Option Box</label>
+            <select id="option-box" name="option-box">
+                <option value="choice1">Choice 1</option>
+                <option value="choice2">Choice 2</option>
+                <option value="choice3">Choice 3</option>
+            </select>
+
+            <label for="textarea">Text Area</label>
+            <textarea id="textarea" name="textarea" rows="4" placeholder="Enter your comments"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

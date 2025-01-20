@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, nav, section, footer {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .blog-post {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>This is a demo website showcasing various HTML5 activities and features.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#navigation">Navigation</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <h2>About the Theme</h2>
+        <p>The theme of this website demonstrates HTML5's semantic elements and modern web design practices.</p>
+    </section>
+
+    <!-- Navigation Section -->
+    <section id="navigation" class="section">
+        <h2>Navigation</h2>
+        <p>Below are the activities listed in assignments:</p>
+        <ul>
+            <li>Activity 1A: Basic HTML structure</li>
+            <li>Activity 1B: Using CSS for styling</li>
+            <li>Activity 1C: Adding JavaScript interactions</li>
+        </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <h3>Introduction to HTML5</h3>
+            <p>HTML5 introduces semantic elements that help structure web pages better for both developers and search engines.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>CSS Basics</h3>
+            <p>Learn how to style your HTML elements effectively with CSS.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Read More</a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Website | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
